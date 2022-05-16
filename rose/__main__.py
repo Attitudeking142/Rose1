@@ -121,8 +121,8 @@ async def start_bot():
     except Exception:
         pass
     try:
-            await app2.join_chat("KuttyAngelXSupport")
-            await app2.join_chat("KuttyAngelXUpdates")
+            await app2.join_chat("DuskyBotZSupport")
+            await app2.join_chat("DuskyBotZUpdates")
     except UserAlreadyParticipant:
         pass
     await idle()
@@ -141,10 +141,10 @@ start_button = InlineKeyboardMarkup(
         ],
         [
            InlineKeyboardButton(
-                text="🛠 Support", url="https://t.me/KuttyAngelXSupport"
+                text="🛠 Support", url="https://t.me/DuskyBotZSupport"
             ),
             InlineKeyboardButton(
-                text="👨‍💻 Updates", url="http://t.me/KuttyAngelXUpdates"
+                text="👨‍💻 Updates", url="http://t.me/DuskyBotZUpdates"
             ),
         ],
         [
@@ -157,7 +157,7 @@ start_button = InlineKeyboardMarkup(
 )
 
 start_text = f"""
-Hello There ! I'm **Kutty Angel** ✨ 
+Hello There ! I'm **ԋყρҽɾɱαɳ** ✨ 
 An  advanced telegram Group management Bot For help 
 You Protect Your Groups & Suit For All Your Needs.
 """
@@ -176,10 +176,10 @@ keyboard = InlineKeyboardMarkup(
 
 basichelp_string = """
 **👥Basic Group Commands**
-✘ Base commands are the basic tools of Rose Bot which help you to manage 
+✘ Base commands are the basic tools of ԋყρҽɾɱαɳ Bot which help you to manage 
 your group easily and effectivelyYou can choose 
 an option below, by clicking a button.
-Also you can ask anything in [Support Group](https://t.me/KuttyAngelXSupport).
+Also you can ask anything in [Support Group](https://t.me/DuskyBotZSupport).
 
 >> Shorter the Way, Faster you Go! 🏃‍♂️
 """
@@ -189,7 +189,7 @@ funtools_string = """
 
 ✘ Extra tools which are available in bot and tools made for fun are here
 You can choose an option below, by clicking a button.
-Also you can ask anything in [Support Group](https://t.me/KuttyAngelXSupport).
+Also you can ask anything in [Support Group](https://t.me/DuskyBotZSupport).
 
 Click buttons to get help ?
 """
@@ -200,7 +200,7 @@ advtools_string = """
 ✘ Advanced commands will help you to secure your groups 
 from attackers and do many stuff in group from a single bot
 You can choose an option below, by clicking a button.
-Also you can ask anything in [Support Group](https://t.me/KuttyAngelXSupport).
+Also you can ask anything in [Support Group](https://t.me/DuskyBotZSupport).
 
 >> Shorter the Way, Faster you Go! 🏃‍♂️
 """
@@ -234,7 +234,7 @@ started time - `2022 {dater}:{timer} `
                 """
             )
         return await message.reply(
-            "**Heya, @kuttyangelrosebot here :) PM me if you have any questions how to use me!**", reply_markup=keyboard
+            "**Heya, @hyperman_robot here :) PM me if you have any questions how to use me!**", reply_markup=keyboard
         )
     if len(message.text.split()) > 1:
         name = (message.text.split(None, 1)[1]).lower()
@@ -347,10 +347,10 @@ keyboar = InlineKeyboardMarkup(
                     ],
                     [
                         InlineKeyboardButton(
-                            text="Updates 🗣", url="https://t.me/KuttyAngelXUpdates"
+                            text="Updates 🗣", url="https://t.me/DuskyBotZUpdates"
                         ),
                         InlineKeyboardButton(
-                            text="Support 👥", url="https://t.me/KuttyAngelXSupport"
+                            text="Support 👥", url="https://t.me/DuskyBotZSupport"
                         ),
                     ],
                     [
@@ -363,7 +363,7 @@ keyboar = InlineKeyboardMarkup(
 
 texts = """
 **Welcome to help menu**
-I'm Kutty Angel group management bot with some useful features.
+I'm ԋყρҽɾɱαɳ group management bot with some useful features.
 You can choose an option below, by clicking a button.
 Also you can ask anything in Support Group.
 """
@@ -412,7 +412,7 @@ async def help_parser(name, keyboard=None):
         """
 **Welcome to help menu**
 
-I'm Kutty Angel group management bot with some useful features.
+I'm ԋყρҽɾɱαɳ group management bot with some useful features.
 You can choose an option below, by clicking a button.
 Also you can ask anything in Support Group.
 """.format(
@@ -451,7 +451,7 @@ async def help_button(client, query):
     top_text = f"""
 **Welcome to help menu**
 
-I'm Kutty Angel group management bot with some useful features.
+I'm ԋყρҽɾɱαɳ group management bot with some useful features.
 You can choose an option below, by clicking a button.
 Also you can ask anything in Support Group.
  """
@@ -818,17 +818,17 @@ async def commands_callbacc(_, CallbackQuery):
     modules_count = len(ALL_MODULES)
 
     TEXT_PART = f"""
-@kuttyangelrosebot ** is one of the fastest and most feature filled group manager**.   
+@hyperman_robot ** is one of the fastest and most feature filled group manager**.   
  
  - **Latest Update Time** : `2022 {dater}:{timer}`
  - **Modules Loaded **:  `{modules_count}`
  - **Globally banned users.** :  `{gbans}`
-@kuttyangelrosebot **Mongo database stats**
+@hyperman_robot **Mongo database stats**
  - ** Users ** : `{served_users}`
  - ** chats.** : `{served_chats}`
 
  
- **Why Rose**:
+ **Why ԋყρҽɾɱαɳ**:
  
 - **Simple**: `Easy usage and compaitble with many bot commands.`
 - **Featured**: `Many features which other group management bots don't have.`
@@ -843,8 +843,8 @@ async def commands_callbacc(_, CallbackQuery):
     await CallbackQuery.message.delete()
 
 TEXT_PART_1 = """
-**Welcome to the Kutty Angel Configuration**
-The first thing to do is to add Kutty Angel Bot ✨ to your group! 
+**Welcome to the ԋყρҽɾɱαɳ Configuration**
+The first thing to do is to add ԋყρҽɾɱαɳ ✨ to your group! 
 For doing that, press the under button and select your group,
 then press Done to continue the tutorial..
 """
@@ -857,7 +857,7 @@ To do that, follow this easy steps:
 ▫️ Click Manage Group
 ▫️ Goto Administrators 
 ▫️ Press on Administrator
-▫️ Add @kuttyangelrosebot as Admin
+▫️ Add @hyperman_robot as Admin
 ▫️ Give full permissions 
 ▫️ Confirm
 """
@@ -866,14 +866,14 @@ TEXT_PART_3 = """
 **Excellent!** Now the Bot is ready to use!
 All commands can be used with / 
 If you're facing any difficulties in setting up me in your group, 
-so don't hesitate to come in @KuttyAngelXSupport.
+so don't hesitate to come in @DuskyBotZSupport.
 We would love to help you.
 """
 
 
 BUTTON_1 = InlineKeyboardMarkup(
         [[        
-        InlineKeyboardButton('Add Me to Chat ! 🎉', url='http://t.me/kuttyangelrosebot?startgroup=new')
+        InlineKeyboardButton('Add Me to Chat ! 🎉', url='http://t.me/hyperman_robot?startgroup=new')
         ],
         [InlineKeyboardButton('Done ✅', callback_data="next_1")
         ]]
@@ -914,13 +914,13 @@ async def popat(_, CallbackQuery):
 
 
 text = """
-@kuttyangelrosebot is one of the fastest and most feature filled group manager.
+@hyperman_robot is one of the fastest and most feature filled group manager.
 
-Kutty Angel ✨ is developed and actively maintained by @ONLY_DUSKY!
+ԋყρҽɾɱαɳ ✨ is developed and actively maintained by @ONLY_DUSKY!
 
-Kutty Angel has been online since 2021/8/10 and have many [groups and users.](https://t.me/KuttyAngelXUpdates)
+ԋყρҽɾɱαɳ has been online since 2021/8/10 and have many [groups and users.](https://t.me/KuttyAngelXUpdates)
 
-**Why Rose:**
+**Why ԋყρҽɾɱαɳ:**
 - **Simple**: Easy usage and compaitble with many bot commands.
 - **Featured**: Many features which other group management bots don't have.
 - **Fast**: Pyrogram base bot and use mongo as database.
@@ -960,8 +960,8 @@ async def commands_callbacc(_, CallbackQuery):
     await CallbackQuery.message.delete()
 
 TEXT_PAT_1 = """
-**Welcome to the Kutty Angel Configuration**
-The first thing to do is to add Kutty Angel Bot ✨ to your group! 
+**Welcome to the ԋყρҽɾɱαɳ Configuration**
+The first thing to do is to add ԋყρҽɾɱαɳ ✨ to your group! 
 For doing that, press the under button and select your group,
 then press Done to continue the tutorial..
 """
@@ -974,7 +974,7 @@ To do that, follow this easy steps:
 ▫️ Click Manage Group
 ▫️ Goto Administrators 
 ▫️ Press on Administrator
-▫️ Add @kuttyangelrosebot as Admin
+▫️ Add @hyperman_robot as Admin
 ▫️ Give full permissions 
 ▫️ Confirm
 """
@@ -983,14 +983,14 @@ TEXT_PART_3 = """
 **Excellent!** Now the Bot is ready to use!
 All commands can be used with / 
 If you're facing any difficulties in setting up me in your group, 
-so don't hesitate to come in @KuttyAngelXSupport.
+so don't hesitate to come in @DuskyBotZSupport.
 We would love to help you.
 """
 
 
 BUTON_1 = InlineKeyboardMarkup(
         [[        
-        InlineKeyboardButton('Add Me to Chat ! 🎉', url='http://t.me/kuttyangelrosebot?startgroup=new')
+        InlineKeyboardButton('Add Me to Chat ! 🎉', url='http://t.me/hyperman_robot?startgroup=new')
         ],
         [InlineKeyboardButton('Done ✅', callback_data="next_100")
         ]]
